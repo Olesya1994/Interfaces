@@ -1,6 +1,6 @@
 package oop2;
 
-public class Truck extends Transport {
+public class Truck extends MotorTransport {
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
@@ -11,5 +11,10 @@ public class Truck extends Transport {
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
+    }
+    public void servise(){
+        updateTyre();
+        checkEngine();
+        checkTrailer();
     }
 }
